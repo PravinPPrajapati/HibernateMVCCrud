@@ -8,7 +8,7 @@
     
     <table border="1">
 		<tr>
-			<td colspan="6" align="center"><a href="/insertUser">Insert</a></td>
+			<td colspan="6" align="center"><a href="/HibernateMVCCrud/insertUser">Insert</a></td>
 		</tr>
 		<tr>
 			<th>UserId</th>
@@ -24,8 +24,8 @@
 			<td th:text="${user.userName}"></td>
 			<td th:text="${user.password}"></td>
 			<td th:text="${user.email}"></td>
-			<td><a th:href="@{'/updateUser?id=' + ${user.userId}}" th:text="Update">Update</a></td>
-			<td><a th:href="@{'/deleteUser?id=' + ${user.userId}}" th:text="Delete">Delete</a></td>
+			<td><a th:href="@{'/HibernateMVCCrud/updateUser?id=' + ${user.userId}}" th:text="Update"></a></td>
+			<td><a th:href="@{'/HibernateMVCCrud/deleteUser?id=' + ${user.userId}}" th:text="Delete"></a></td>
 		</tr>
 	</table>
 	
